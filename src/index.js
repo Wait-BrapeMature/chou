@@ -32,7 +32,7 @@ button.click(function () {
         return
     }
     loading = true
-    button.html('停止')
+    button.html('看清楚再点哦')
     setTimeout(function () {
         startLottery()
     }, 1000)
