@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 60px;
+    background-color: red;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease-in .5s;
+}
+
+.button:hover {
+    transition: ease-in .5s;
+    font-size: 28px;
+}
+
+.button.result {
+    background: #fff;
+    color: #000;
+    width: 80vw;
+    height: auto;
+    cursor: text;
+    transition: none;
+}
+
+.button.result:hover {
+    font-size: 24px;
+    transition: none;
+}
+
+.number-wrap {
+    width: 70vw;
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    border: 15px solid #000;
+    border-radius: 10px;
+    height: 30vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.lottery-number{
+    font-size: 15vw;
+    position: relative;
+    line-height: 30vw;
+    width: 100%;
+}
+
+.lottery-number.animate-start {
+    animation: flash 0.1s linear infinite forwards;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
