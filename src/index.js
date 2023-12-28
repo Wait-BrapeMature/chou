@@ -52,7 +52,7 @@ function stop(winner) {
         for (i in wwwwwinner) {
             text += config.names[wwwwwinner[i]] + ' , '
         }
-        button.html('最终获奖结果是：' + text)
+        button.html('你好，这位倒霉蛋你抽到了：' + text)
         button.addClass('result')
     }
 }
